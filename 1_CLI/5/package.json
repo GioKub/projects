@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "hash-files": "^1.1.1"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "axios": "^0.25.0",
+    "country-flag-emoji": "^1.0.3",
+    "node-telegram-bot-api": "^0.56.0"
+  }
+}

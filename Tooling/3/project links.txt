@@ -1,0 +1,33 @@
+www.plantuml.com/plantuml/png/DSv12W8n38NX_Jj5Bk05NCYuabcC28C7wDGeXJQHDaNczgQBMVzV7fcQXMgzP214qqhFnXKibcodwsD6r9mvMb9fT0l6lx030z7fCW2TQKtowL-QvQsrX47XmVjnu6RHBMMcUo-Rd-88RiQMRomhCB6y_9K_
+
+1)
+@startuml
+
+actor User
+entity API
+collections Gateway
+
+User -> API : Singup Information
+API -> Gateway : Mobile Number 
+Gateway -> User: SMS
+
+@enduml
+
+
+http://www.plantuml.com/plantuml/uml/SoWkIImgAStDuNBCoKnELT2rKt3AJx9IS2mjoKZDAybCJYp9pCzJ24ejB4qjBk42oYde0jM05MDHLLoGdrUSoeLkM5u-K5sHGY9sGo6ARNHr2QY66kwGcfS2SZ00
+
+2)
+@startuml
+
+actor User
+entity API
+collections Gateway
+queue RabbitMQ
+control ServiceWorkers
+
+User -> API : Singup Information
+API ->  RabbitMQ : Mobile Number
+RabbitMQ --> ServiceWorkers
+ServiceWorkers -->Gateway
+Gateway -> User: SMS
+@enduml

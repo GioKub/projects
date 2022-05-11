@@ -1,0 +1,1 @@
+npm exec -- hash-files ./test.txt
